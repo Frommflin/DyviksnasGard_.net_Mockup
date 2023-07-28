@@ -36,10 +36,15 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2023 - DyviksnäsGård - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
+    <footer class="footer">
+        <a asp-area="" asp-controller="Home" asp-action="GoToInstagram">
+            <img src="~/icons/instagram-white.png" alt="Instagram" />
+            Följ oss på Instagram
+        </a>
+        <a asp-area="" asp-controller="Home" asp-action="GoToFacebook">
+            <img src="~/icons/facebook-white.png" alt="Facebook" />
+            Följ oss på Facebook
+        </a>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
