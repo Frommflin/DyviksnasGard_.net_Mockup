@@ -6,60 +6,64 @@
     <title>@ViewData["Title"] - DyviksnäsGård</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/general.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/DyviksnäsGård.styles.css" asp-append-version="true" />
 </head>
 <body>
-    <header>
-        <div id="bannerDiv">
-            <img src="~/images/placeholderBanner.png" alt="Dyviksnäs Gårds Banner"/>
-        </div>
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container-fluid">
-                <div class="navbar-brand">
-                    <img id="navLogo" src="~/icons/DyviksnäsLogga.png" alt="Dyviksnäs Gårds logga" />
-                    Dyviksnäs Gård
-                </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse">
-                    <div class="navbar-nav">
-                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Nyheter</a>
-                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Om oss</a>
-                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Kontakt</a>
-                        <div class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" asp-area="" asp-controller="Home" asp-action="Index" role="button" data-bs-toggle="dropdown" aria-expanded="false" >Träffa hästarna</a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Index">Alla hästar</a>
-                                <hr />
-                                <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Index">Luffen</a>
-                                <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Index">Troll</a>
-                                <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Index">Kotte</a>
+    <div id="content" class="container">
+        <header>
+            <div id="bannerDiv">
+                <img id="banner" src="~/images/placeholderBanner.png" alt="Dyviksnäs Gårds Banner" />
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <div class="navbar-brand">
+                        <img id="navLogo" src="~/icons/DyviksnäsLogga.png" alt="Dyviksnäs Gårds logga" />
+                        Dyviksnäs Gård
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse">
+                        <div class="navbar-nav">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Nyheter</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Om oss</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Kontakt</a>
+                            <div class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" asp-area="" asp-controller="Home" asp-action="Index" role="button" data-bs-toggle="dropdown" aria-expanded="false">Träffa hästarna</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Index">Alla hästar</a>
+                                    <hr />
+                                    <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Index">Luffen</a>
+                                    <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Index">Troll</a>
+                                    <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Index">Kotte</a>
+                                </div>
                             </div>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Galleri</a>
                         </div>
-                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Galleri</a>
                     </div>
                 </div>
-            </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
+            </nav>
+        </header>
+        <div class="container">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
 
-    <footer class="footer">
-        <a asp-area="" asp-controller="Home" asp-action="GoToInstagram">
-            <img src="~/icons/instagram-white.png" alt="Instagram" />
-            Följ oss på Instagram
-        </a>
-        <a asp-area="" asp-controller="Home" asp-action="GoToFacebook">
-            <img src="~/icons/facebook-white.png" alt="Facebook" />
-            Följ oss på Facebook
-        </a>
-    </footer>
+        <footer class="footer">
+            <a asp-area="" asp-controller="Home" asp-action="GoToInstagram">
+                <img src="~/icons/instagram-white.png" alt="Instagram" />
+                Följ oss på Instagram
+            </a>
+            <a asp-area="" asp-controller="Home" asp-action="GoToFacebook">
+                <img src="~/icons/facebook-white.png" alt="Facebook" />
+                Följ oss på Facebook
+            </a>
+        </footer>
+    </div>
+    
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

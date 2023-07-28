@@ -1,0 +1,62 @@
+﻿@use 'colors'
+
+body
+    background-color: colors.$grey-light
+
+#content
+    background-color: colors.$white
+    box-shadow: 5px 0px 8px 0px rgba(0, 0, 0, 0.4), -5px 0px 8px 0px rgba(0, 0, 0, 0.4)
+    min-height: 100vh
+    padding: 0px 0px 120px 0px
+    position: relative
+    overflow: hidden
+
+header
+    margin-bottom: 10px
+
+#bannerdiv
+    position: relative
+    width: 100%
+    max-height: 200px
+    display: inline-block
+    overflow: hidden
+    margin-bottom: -6px
+
+#banner
+    display: block
+    width: 100%
+
+nav
+    background-color: colors.$falured
+    box-shadow: 0px 1px 16px 7px rgba(0, 0, 0, 0.8)
+    min-height: 60px
+
+#navLogo
+    height: 50px
+
+footer
+    background-color: colors.$falured
+    box-shadow: 0px 1px 16px 7px rgba(0, 0, 0, 0.8)
+    position: absolute
+    bottom: 0px
+    width: 100%
+    height: 100px
+    display: flex
+    flex-wrap: wrap
+    align-content: center
+    justify-content: space-evenly
+
+    a
+        opacity: 0.7
+        color: colors.$white
+        text-decoration: none
+        margin: 5px
+    a:hover
+        opacity: 1
+        transition: 800ms
+        color: colors.$white
+    img
+        width: 20px
+
+
+
