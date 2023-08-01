@@ -33,16 +33,6 @@ namespace DyviksnäsGård.Controllers
             return View();
         }
 
-        public IActionResult GoToInstagram()
-        {
-            return Redirect("https://www.instagram.com/dyviksnas_gard/");
-        }
-
-        public IActionResult GoToFacebook()
-        {
-            return Redirect("https://www.facebook.com/pages/Dyviksn%C3%A4s%20G%C3%A5rd/102500191339544");
-        }
-
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
