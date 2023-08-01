@@ -28,6 +28,11 @@ namespace DyviksnäsGård.Controllers
             return View();
         }
 
+        public IActionResult AllHorses()
+        {
+            return View();
+        }
+
         public IActionResult GoToInstagram()
         {
             return Redirect("https://www.instagram.com/dyviksnas_gard/");
