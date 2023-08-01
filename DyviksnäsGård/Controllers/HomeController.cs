@@ -32,8 +32,9 @@ namespace DyviksnäsGård.Controllers
         {
             return View();
         }
-        public IActionResult Horse()
+        public IActionResult Horse(string name)
         {
+            ViewData["name"] = name;
             return View();
         }
 
