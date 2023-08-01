@@ -37,9 +37,10 @@
                                 <div class="dropdown-menu">
                                     <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="AllHorses">Alla hästar</a>
                                     <hr />
-                                    <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Index">Luffen</a>
-                                    <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Index">Troll</a>
-                                    <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Index">Kotte</a>
+                                    <!-- TODO: Add dynamically according to content in DB -->
+                                    <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Horse">Luffen</a>
+                                    <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Horse">Troll</a>
+                                    <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Horse">Kotte</a>
                                 </div>
                             </div>
                             <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Gallery">Galleri</a>
