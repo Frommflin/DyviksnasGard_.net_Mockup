@@ -29,11 +29,15 @@
 }
 
 .postContent {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0px 25px;
   color: #801818;
+}
+.postContent img {
+  max-width: 100%;
 }
 
 #socialMedia {
