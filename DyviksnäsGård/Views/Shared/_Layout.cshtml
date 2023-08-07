@@ -13,60 +13,58 @@
     <link rel="stylesheet" href="~/DyviksnäsGård.styles.css" asp-append-version="true" />
 </head>
 <body>
-    <div id="content" class="container">
-        <header>
-            <div id="bannerDiv">
-                <img id="banner" src="~/images/placeholderBanner.png" alt="Dyviksnäs Gårds Banner" />
-            </div>
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <div class="container-fluid">
-                    <div class="navbar-brand">
-                        <img id="navLogo" src="~/icons/DyviksnäsLogga.png" alt="Dyviksnäs Gårds logga" />
-                        Dyviksnäs Gård
-                    </div>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="navbar-collapse collapse">
-                        <div class="navbar-nav">
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Aktuellt</a>
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="About">Om oss</a>
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Contact">Kontakt</a>
-                            <div class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Träffa hästarna</a>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="AllHorses">Alla hästar</a>
-                                    <hr />
-                                    <!-- TODO: Add dynamically according to content in DB -->
-                                    <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Horse" asp-route-name="Luffen">Luffen</a>
-                                    <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Horse" asp-route-name="Troll">Troll</a>
-                                    <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Horse" asp-route-name="Kotte">Kotte</a>
-                                </div>
+    <header>
+        <div id="bannerDiv">
+            <img id="banner" src="~/images/placeholderBanner.png" alt="Dyviksnäs Gårds Banner" />
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <div class="navbar-brand">
+                    <img id="navLogo" src="~/icons/DyviksnäsLogga.png" alt="Dyviksnäs Gårds logga" />
+                    Dyviksnäs Gård
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse">
+                    <div class="navbar-nav">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Aktuellt</a>
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="About">Om oss</a>
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Contact">Kontakt</a>
+                        <div class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Träffa hästarna</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="AllHorses">Alla hästar</a>
+                                <hr />
+                                <!-- TODO: Add dynamically according to content in DB -->
+                                <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Horse" asp-route-name="Luffen">Luffen</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Horse" asp-route-name="Troll">Troll</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Horse" asp-route-name="Kotte">Kotte</a>
                             </div>
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Gallery">Galleri</a>
                         </div>
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Gallery">Galleri</a>
                     </div>
                 </div>
-            </nav>
-        </header>
-        <div class="container">
-            <main role="main" class="pb-3">
-                @RenderBody()
-            </main>
-        </div>
-
-        <footer>
-            <a href="https://www.instagram.com/dyviksnas_gard/" target="_blank">
-                <img src="~/icons/instagram-white.png" alt="Instagram" />
-                Följ oss på Instagram
-            </a>
-            <a href="https://www.facebook.com/profile.php?id=100064250402634" target="_blank">
-                <img src="~/icons/facebook-white.png" alt="Facebook" />
-                Följ oss på Facebook
-            </a>
-        </footer>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
     </div>
+
+    <footer>
+        <a href="https://www.instagram.com/dyviksnas_gard/" target="_blank">
+            <img src="~/icons/instagram-white.png" alt="Instagram" />
+            Följ oss på Instagram
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=100064250402634" target="_blank">
+            <img src="~/icons/facebook-white.png" alt="Facebook" />
+            Följ oss på Facebook
+        </a>
+    </footer>
     
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
