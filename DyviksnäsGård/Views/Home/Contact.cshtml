@@ -5,11 +5,39 @@
 <div>
     <div class="container">
         <div class="row">
-            <div class="contactpage col-12 col-md-6">
+            <div id="contact" class="col-12 col-md-6">
                 <h1>Kontakta Oss</h1>
                 <p>Email: stallet@dyviksnas.se</p>
+                <hr />
+                <form id="contactForm" class="col col-xs-6" asp-action="" method="post">
+                    <div class="input-group">
+                        <div class="contactInput input-group-prepend">
+                            <label class="input-group-text">Namn</label>
+                        </div>
+                        <input type="text" class="form-control" name="senderName" placeholder="Ditt namn">
+                    </div>
+                    <div class="input-group">
+                        <div class="contactInput input-group-prepend">
+                            <label class="input-group-text">Email</label>
+                        </div>
+                        <input type="email" class="form-control" name="senderEmail" placeholder="Din email" required>
+                    </div>
+                    <div class="input-group">
+                        <div class="contactInput input-group-prepend">
+                            <label class="input-group-text">Ämne</label>
+                        </div>
+                        <input type="text" class="form-control" name="subject" placeholder="Ämne på mailet" required>
+                    </div>
+                    <div class="input-group">
+                        <div class="contactInput input-group-prepend">
+                            <label class="input-group-text">Meddelande</label>
+                        </div>
+                        <textarea class="form-control" name="message" placeholder="Skriv ditt meddelande här" required></textarea>
+                    </div>
+                    <input type="submit" value="Skicka" class="btn" />
+                </form>
             </div>
-            <div class="contactpage col-12 col-md-6">
+            <div id="find" class="col-12 col-md-6">
                 <h1>Hitta hit</h1>
                 <div>
                     <p>
