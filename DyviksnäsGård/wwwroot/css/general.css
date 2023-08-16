@@ -5,34 +5,48 @@
 body {
   min-height: 100vh;
   padding: 0px 0px 120px 0px;
-  position: relative;
+}
+
+h1 {
+  font-family: "Tangerine", cursive;
 }
 
 header {
   margin-bottom: 10px;
 }
 
-#bannerdiv {
-  position: relative;
-  width: 100%;
-  max-height: 200px;
-  display: inline-block;
-  overflow: hidden;
-  margin-bottom: -6px;
+#logoBanner {
+  color: #801818;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+#logoBanner h1 {
+  font-size: calc(2rem + 2vw);
 }
 
-#banner {
-  display: block;
+#bannerLogo {
+  width: calc(3rem + 2vw);
+  min-width: 3.5rem;
+  margin-right: 2rem;
+}
+
+#imgBanner {
+  position: relative;
   width: 100%;
+  max-height: 15rem;
+}
+
+#bannerImg {
+  width: 100%;
+  max-height: 15rem;
 }
 
 nav {
   background-color: #801818;
   box-shadow: 0px 1px 16px 7px rgba(0, 0, 0, 0.8);
   min-height: 60px;
-}
-nav .navbar-brand {
-  font-family: "Tangerine", cursive;
 }
 
 #navLogo {
