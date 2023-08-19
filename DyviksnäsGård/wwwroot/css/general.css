@@ -4,10 +4,12 @@
 body {
   min-height: 100vh;
   padding: 0px 0px 120px 0px;
+  font-family: "Times New Roman", Times, serif;
 }
 
 h1 {
   font-family: "Tangerine", cursive;
+  color: #801818;
 }
 
 header {
@@ -15,7 +17,6 @@ header {
 }
 
 #logoBanner {
-  color: #801818;
   display: flex;
   justify-content: center;
   align-items: center;
